@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <meta charset="UTF-8">
+  <title>Survery Form</title>
+  <link rel="stylesheet" href="./styles.css">
+</header>
+
+<body>
+
+  <div class="form-card">
+    <h1 id="title">Survey Title</h1>
+    <p id="description">
+      This is a short survey which aims to collect data on general day to day computer useage and personal preference. Please provide responses for all fields and questions.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+      <label id="email-label" for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+      <label id="number-label" for="number">Age</label>
+      <input id="number" name="number" type="number" placeholder="Your age" min="6" max="105" required>
+
+      <label id="dropdown-label" for="dropdown">Select the type of device you spend the most time using on a daily basis</label><br>
+      <select id="dropdown" name="dropdown" value="" required>
+        <option id="default-option" value="" required>Make a selection</option>
+        <option value="Desktop">Desktop</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Tablet">Tablet</option>
+        <option value="Phone">Smart Phone</option>
+      </select><br>
+
+      <label id="radio-label" for="radio-group">Which mobile OS do you prefer?</label><br>
+      <span><input name="radio-group" type="radio" value="Android" required>&nbsp;Android</span><br>
+      <span><input name="radio-group" type="radio" value="iOS"></span>&nbsp;iOS</span><br>
+      <span><input name="radio-group" type="radio" value="No Preference">&nbsp;No Preference</span><br>
+
+      <label id="checkbox-label" for="checkbox-group">Which of the following devices do you currently own?</label><br>
+      <span><input name="checkbox-group" type="checkbox" value="Mac OS Desktop">&nbsp;macOS Desktop</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Macbook">&nbsp;Macbook</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="iPad">&nbsp;iPad</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="iPhone">&nbsp;iPhone</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Apple Watch">&nbsp;Apple Watch</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Windows Desktop">&nbsp;Windows Desktop</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Windows Laptop">&nbsp;Windows Laptop</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Windows Tablet">&nbsp;Windows Tablet</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Windows Phone">&nbsp;Windows Phone</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Chromebook">&nbsp;Chromebook</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Android Tablet">&nbsp;Android Tablet</span><br>
+      <span><input name="checkbox-group" type="checkbox" value="Android Phone">&nbsp;Android Phone</span><br>
+
+      <label id="textarea-label" for="textarea">Additional comments on your computer useage and preferences</label><br>
+      <textarea id="textarea" placeholder="Optional"></textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="./main.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
